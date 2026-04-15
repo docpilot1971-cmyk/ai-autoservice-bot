@@ -1,0 +1,431 @@
+.engine-hero__card,
+.engine-block,
+.engine-cta {
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+main > .section {
+  padding-block: 5px;
+}
+
+.engine-hero {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+}
+
+.engine-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(18, 18, 18, 0.64) 0%, rgba(18, 18, 18, 0.52) 55%, rgba(18, 18, 18, 0.64) 100%),
+    radial-gradient(circle at 20% 20%, rgba(255, 107, 0, 0.12), transparent 58%);
+}
+
+.engine-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.engine-hero__card {
+  background-color: rgba(20, 20, 20, 0.62);
+  backdrop-filter: blur(2px);
+}
+
+.engine-block,
+.engine-cta {
+  background-color: rgba(30, 30, 30, 0.72);
+}
+
+body.page-engine,
+body.page-parts,
+body.page-ac,
+body.page-moto,
+body.page-suspension,
+body.page-electrics,
+body.page-kpp {
+  position: relative;
+  isolation: isolate;
+}
+
+body.page-engine::before,
+body.page-parts::before,
+body.page-ac::before,
+body.page-moto::before,
+body.page-suspension::before,
+body.page-electrics::before,
+body.page-kpp::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(180deg, rgba(12, 12, 12, 0.72) 0%, rgba(12, 12, 12, 0.8) 100%),
+    var(--page-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.page-engine .header,
+body.page-engine main,
+body.page-engine .footer,
+body.page-parts .header,
+body.page-parts main,
+body.page-parts .footer,
+body.page-ac .header,
+body.page-ac main,
+body.page-ac .footer,
+body.page-moto .header,
+body.page-moto main,
+body.page-moto .footer,
+body.page-suspension .header,
+body.page-suspension main,
+body.page-suspension .footer,
+body.page-electrics .header,
+body.page-electrics main,
+body.page-electrics .footer,
+body.page-kpp .header,
+body.page-kpp main,
+body.page-kpp .footer {
+  position: relative;
+  z-index: 1;
+}
+
+body.page-engine {
+  --page-bg-image: url("../images/Ремонт двигателя фон.png");
+}
+
+body.page-parts .engine-hero {
+  align-items: flex-start;
+}
+
+body.page-parts .engine-hero > .container {
+  padding-top: clamp(3.5rem, 10vh, 7rem);
+  padding-bottom: 2rem;
+}
+
+body.page-engine .engine-hero,
+body.page-ac .engine-hero,
+body.page-moto .engine-hero,
+body.page-suspension .engine-hero,
+body.page-electrics .engine-hero,
+body.page-kpp .engine-hero {
+  align-items: flex-start;
+}
+
+body.page-engine .engine-hero > .container,
+body.page-ac .engine-hero > .container,
+body.page-moto .engine-hero > .container,
+body.page-suspension .engine-hero > .container,
+body.page-electrics .engine-hero > .container,
+body.page-kpp .engine-hero > .container {
+  padding-top: clamp(3.5rem, 10vh, 7rem);
+  padding-bottom: 2rem;
+}
+
+body.page-parts {
+  --page-bg-image: url("../images/Изготовление деталей фон.png");
+}
+
+body.page-ac {
+  --page-bg-image: url("../images/Ремонт кондиционеров фон.png");
+}
+
+body.page-moto {
+  --page-bg-image: url("../images/ремонт мотоциклов фон.png");
+}
+
+body.page-suspension {
+  --page-bg-image: url("../images/ремонт ходовой фон.png");
+}
+
+body.page-electrics {
+  --page-bg-image: url("../images/Электрика фон.png");
+}
+
+body.page-kpp {
+  --page-bg-image: url("../images/Ремонт трансмиссии фон.png");
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.breadcrumbs__link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--color-accent);
+}
+
+.breadcrumbs__current {
+  color: #eaeaea;
+}
+
+.engine-hero__title {
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+}
+
+.engine-hero__subtitle {
+  color: var(--color-text-muted);
+  max-width: 66ch;
+}
+
+.engine-hero__subtitle + .engine-hero__subtitle {
+  margin-top: 0.9rem;
+}
+
+.engine-block__title {
+  margin-bottom: 0.9rem;
+  font-size: clamp(1.55rem, 2.5vw, 2rem);
+}
+
+.engine-list,
+.engine-steps {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+}
+
+.engine-list li + li,
+.engine-steps li + li {
+  margin-top: 0.4rem;
+}
+
+.engine-block__note {
+  color: #eaeaea;
+}
+
+.engine-why .engine-block__note {
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+}
+
+.engine-why .engine-list {
+  line-height: 1.6;
+}
+
+.engine-why .engine-list li {
+  margin-bottom: 0.8rem;
+}
+
+.engine-why .engine-list li:last-child {
+  margin-bottom: 0;
+}
+
+.engine-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.engine-links__item {
+  border: 1px solid var(--color-border);
+  border-radius: 9px;
+  padding: 0.5rem 0.8rem;
+  color: var(--color-text);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.engine-links__item:hover {
+  border-color: var(--color-accent);
+  color: #ffd7be;
+}
+
+.engine-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.engine-gallery:not(.is-expanded) .engine-gallery__item:nth-child(n+4) {
+  display: none;
+}
+
+.engine-gallery__item {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.engine-gallery__image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.engine-gallery__item:hover .engine-gallery__image {
+  transform: scale(1.02);
+}
+
+.engine-gallery__caption {
+  padding: 0.75rem 0.85rem;
+  color: var(--color-text-muted);
+  border-top: 1px solid var(--color-border);
+}
+
+.engine-gallery__item.is-hidden {
+  display: none;
+}
+
+.engine-gallery__more {
+  margin-top: 1rem;
+}
+
+.engine-gallery__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: #ffd3b6;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1.35;
+}
+
+.engine-gallery__toggle:hover {
+  color: #ffe4d2;
+}
+
+.engine-gallery__toggle-arrow {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+  font-weight: 700;
+}
+
+.engine-gallery__toggle.is-open .engine-gallery__toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.engine-gallery__toggle-text {
+  text-decoration: none;
+}
+
+.engine-cta__title {
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.45rem, 2.8vw, 2rem);
+}
+
+.engine-cta__text {
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.engine-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.engine-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: none;
+}
+
+.engine-lightbox.is-open {
+  display: grid;
+  place-items: center;
+}
+
+.engine-lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.78);
+}
+
+.engine-lightbox__dialog {
+  position: relative;
+  width: min(92vw, 980px);
+  max-height: 90vh;
+  overflow: auto;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: #171717;
+}
+
+.engine-lightbox__image {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  background: #111;
+}
+
+.engine-lightbox__caption {
+  margin: 0;
+  padding: 0.85rem 1rem 1rem;
+  color: var(--color-text-muted);
+}
+
+.engine-lightbox__close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 999px;
+  background: rgba(20, 20, 20, 0.9);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (max-width: 1023px) {
+  .engine-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .engine-hero {
+    background-position: 65% center;
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  .breadcrumbs {
+    font-size: 0.9rem;
+  }
+
+  .engine-hero__title {
+    font-size: clamp(1.65rem, 8vw, 1.9rem);
+  }
+
+  .engine-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .engine-cta__actions .btn {
+    width: 100%;
+  }
+}

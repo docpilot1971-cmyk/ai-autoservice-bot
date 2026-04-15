@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+env.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# База данных и кеш
+*.db
+chroma_db/
+
+# Конфигурация с секретами
+.env
+.env.local
+.env.*.local
+
+# Логи
+*.log
+nohup.out
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Временные файлы
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Тестовые файлы кеша
+test_cache.db
+
+# Артефакты сборки
+dist/
+build/
+*.egg-info/

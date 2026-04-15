@@ -1,0 +1,29 @@
+[Unit]
+Description=Avtoritet Assistant API (FastAPI + Uvicorn)
+After=network.target
+
+[Service]
+Type=simple
+# Измените при необходимости под пользователя сервера:
+User=www-data
+Group=www-data
+# Измените путь под ваш deploy-директорию:
+WorkingDirectory=/opt/avtoritet/backend
+EnvironmentFile=/opt/avtoritet/backend/.env
+Environment=PYTHONUNBUFFERED=1
+
+# If you use venv:
+ExecStart=/opt/avtoritet/backend/.venv/bin/uvicorn app:app --host 0.0.0.0 --port 8000 --proxy-headers --forwarded-allow-ips=*
+
+Restart=always
+RestartSec=5
+TimeoutStartSec=30
+TimeoutStopSec=20
+
+# Logs to journald
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=avtoritet-assistant
+
+[Install]
+WantedBy=multi-user.target

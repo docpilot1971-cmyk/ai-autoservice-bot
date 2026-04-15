@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Услуги автосервиса в Волгограде: ремонт двигателя, коробки передач, ходовой части, автоэлектрики, ремонт мотоциклов, изготовление деталей и обслуживание систем кондиционирования.">
+  <title>Услуги автосервиса в Волгограде | avtoritet34.ru</title>
+  <link rel="stylesheet" href="css/style.css?v=20260322-6">
+  <link rel="stylesheet" href="css/services-page.css?v=20260320-1">
+</head>
+<body>
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a class="header__brand" href="index.html#top" aria-label="На главную страницу">
+      <img class="header__logo" src="images/logo2026_1.svg" alt="Логотип инженерного сервисного центра">
+    </a>
+
+    <a class="header__call-mobile" href="tel:+79880183755" aria-label="Позвонить по номеру +7(988)018-3755">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.28.56 3.49.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.21.19 2.39.56 3.49a1 1 0 0 1-.24 1z"/>
+      </svg>
+    </a>
+
+    <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="header-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header__nav" id="header-nav" aria-label="Основная навигация">
+      <ul class="header__menu"><li><a class="header__link" href="index.html#services">Услуги</a></li><li><a class="header__link" href="index.html#about">Почему выбирают нас</a></li><li><a class="header__link" href="index.html#gallery">Галерея</a></li><li><a class="header__link" href="index.html#reviews">Отзывы</a></li><li><a class="header__link" href="index.html#faq">FAQ</a></li><li><a class="header__link" href="index.html#contacts">Контакты</a></li></ul>
+    </nav>
+
+    <a class="btn btn--primary header__cta" href="tel:+79880183755" aria-label="Позвонить по номеру +7 (988) 018-37-55">+7(988)018-3755</a>
+  </div>
+</header>
+
+<main>
+  <section class="section services-page" id="services-page" aria-labelledby="services-page-title">
+    <div class="container services-page__container">
+      <p class="services-page__eyebrow">Инженерный сервисный центр avtoritet34.ru</p>
+      <h1 class="services-page__title" id="services-page-title">Услуги автосервиса в Волгограде</h1>
+      <p class="services-page__lead">Выберите направление: по клику откроется нужная группа работ, а в ремонте автомобилей можно переключать подуслуги по кнопкам.</p>
+
+      <nav class="services-nav" aria-label="Основные группы услуг">
+        <button class="services-nav__btn is-active" type="button" data-target="auto">Ремонт автомобилей</button>
+        <button class="services-nav__btn" type="button" data-target="moto">Ремонт мотоциклов</button>
+        <button class="services-nav__btn" type="button" data-target="parts">Изготовление деталей</button>
+        <button class="services-nav__btn" type="button" data-target="ac">Обслуживание кондиционирования</button>
+      </nav>
+
+      <div class="services-accordion-list" data-services-accordion>
+        <section id="auto" class="service-accordion service-accordion--open" aria-labelledby="auto-title">
+          <h2 class="service-accordion__heading" id="auto-title">
+            <button class="service-accordion__header" type="button" aria-expanded="true" aria-controls="auto-content">
+              <span class="service-accordion__title">Ремонт автомобилей</span>
+              <span class="service-accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div id="auto-content" class="service-accordion__content" role="region" aria-labelledby="auto-title">
+            <p class="service-accordion__summary">Ремонт двигателя, коробки передач, ходовой части и автоэлектрики с диагностикой и понятным перечнем работ.</p>
+
+            <div class="service-subnav" aria-label="Подуслуги ремонта автомобилей">
+              <button class="service-subnav__btn is-active" type="button" data-subtarget="auto-engine" aria-pressed="true">Ремонт двигателя</button>
+              <button class="service-subnav__btn" type="button" data-subtarget="auto-gearbox" aria-pressed="false">Ремонт коробки</button>
+              <button class="service-subnav__btn" type="button" data-subtarget="auto-suspension" aria-pressed="false">Ремонт ходовой</button>
+              <button class="service-subnav__btn" type="button" data-subtarget="auto-electrics" aria-pressed="false">Электрика</button>
+            </div>
+
+            <section class="service-subpanel is-active" id="auto-engine" aria-label="Ремонт двигателя автомобиля">
+              <h3>Ремонт двигателя автомобиля в Волгограде</h3>
+              <p class="service-accordion__summary">Диагностика и ремонт двигателя автомобиля в Волгограде. Устранение нестабильной работы, перегрева, потери мощности, течей и других неисправностей бензиновых и дизельных двигателей.</p>
+              <ul class="service-accordion__list">
+                <li>Диагностика двигателя</li>
+                <li>Замена приводных ремней/цепей</li>
+                <li>Регулировка клапанов</li>
+                <li>Устранение течей масла и антифриза</li>
+                <li>Замена прокладок, сальников, уплотнений</li>
+                <li>Капитальный ремонт</li>
+              </ul>
+              <p class="service-accordion__note">Если двигатель работает нестабильно, перегревается, теряет тягу или расходует масло выше нормы, важно не затягивать с диагностикой. Проверяем состояние узлов, находим причину неисправности и предлагаем понятный план ремонта без лишних работ.</p>
+            </section>
+
+            <section class="service-subpanel" id="auto-gearbox" aria-label="Ремонт коробки передач">
+              <h3>Ремонт коробки передач</h3>
+              <p class="service-accordion__summary">Ремонт коробки передач с диагностикой причин шума, вибрации, затрудненного переключения и утечек масла.</p>
+              <ul class="service-accordion__list">
+                <li>Диагностика коробки передач</li>
+                <li>Обслуживание и ремонт механических коробок передач</li>
+                <li>Замена сцепления</li>
+                <li>Проверка и ремонт приводов и узлов переключения</li>
+                <li>Ремонт раздаточных коробок</li>
+                <li>Обслуживание автоматических и роботизированных коробок, вариаторов</li>
+                <li>Ремонт карданных и приводных валов</li>
+              </ul>
+              <p class="service-accordion__note">Если передачи включаются с усилием, появляется шум или вибрация, это может указывать на износ элементов коробки или сцепления. Выполняем диагностику и ремонт с учетом фактического состояния узлов.</p>
+            </section>
+
+            <section class="service-subpanel" id="auto-suspension" aria-label="Ремонт ходовой части">
+              <h3>Ремонт ходовой части автомобиля</h3>
+              <p class="service-accordion__summary">Ремонт ходовой части автомобиля для восстановления управляемости, устойчивости и комфорта движения.</p>
+              <ul class="service-accordion__list">
+                <li>Диагностика подвески, тормозной системы, рулевого управления</li>
+                <li>Замена пружин, амортизаторов, шаровых опор, сайлентблоков, рычагов</li>
+                <li>Регулировка и замена ступичных подшипников, втулок и стоек стабилизатора</li>
+                <li>Ремонт рулевых реек, замена рулевых тяг и наконечников</li>
+                <li>Замена тормозных колодок, дисков/барабанов, тросов стояночного тормоза, диагностика и ремонт ABS</li>
+                <li>Обслуживание и ремонт пневмоподвески</li>
+              </ul>
+              <p class="service-accordion__note">Посторонние стуки, вибрации, увод автомобиля с траектории и неравномерный износ шин часто связаны с износом элементов ходовой части. Проверяем подвеску и предлагаем конкретный перечень работ по результатам диагностики.</p>
+            </section>
+
+            <section class="service-subpanel" id="auto-electrics" aria-label="Ремонт автоэлектрики">
+              <h3>Ремонт автоэлектрики</h3>
+              <p class="service-accordion__summary">Диагностика и ремонт автоэлектрики, поиск неисправностей в электросистемах автомобиля и восстановление работоспособности оборудования.</p>
+              <ul class="service-accordion__list">
+                <li>Диагностика и ремонт электрооборудования, электронных систем</li>
+                <li>Ремонт стартера и генератора</li>
+                <li>Поиск сложных, в т.ч. «плавающих» неисправностей</li>
+                <li>Восстановление проводки и электронных компонентов</li>
+                <li>Монтаж дополнительного оборудования: видеорегистратор, фаркоп, дополнительное освещение, автономный отопитель</li>
+              </ul>
+              <p class="service-accordion__note">Если автомобиль не заводится, пропадает зарядка, появляются ошибки на панели или нестабильно работает электрооборудование, необходима точная диагностика. Находим причину неисправности и устраняем ее без лишней замены исправных деталей.</p>
+            </section>
+
+            <div class="service-accordion__actions">
+              <a href="tel:+79880183755" class="service-accordion__cta btn btn--primary">Позвонить</a>
+              <a href="remont-dvigatelya.html" class="service-accordion__more" id="auto-more-link" aria-label="Перейти на страницу ремонта двигателя">→ Узнать подробнее</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="moto" class="service-accordion" aria-labelledby="moto-title">
+          <h2 class="service-accordion__heading" id="moto-title">
+            <button class="service-accordion__header" type="button" aria-expanded="false" aria-controls="moto-content">
+              <span class="service-accordion__title">Ремонт мотоциклов</span>
+              <span class="service-accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div id="moto-content" class="service-accordion__content" role="region" aria-labelledby="moto-title">
+            <h3>Ремонт мотоциклов различных марок</h3>
+            <p class="service-accordion__summary">Диагностика, обслуживание и ремонт мотоциклов различных марок с учетом технического состояния и сезонной эксплуатации.</p>
+            <ul class="service-accordion__list">
+              <li>Диагностика мотоцикла</li>
+              <li>Ремонт двигателя мотоцикла</li>
+              <li>Ремонт подвески</li>
+              <li>Ремонт электрики</li>
+              <li>Восстановление пластиковых элементов</li>
+              <li>Подготовка техники к сезону</li>
+            </ul>
+            <p class="service-accordion__note">Работаем с мотоциклами разных марок и типов. Помогаем подготовить технику к сезону, устранить неисправности по двигателю, подвеске и электрике, а также восстановить отдельные элементы.</p>
+            <div class="service-accordion__actions">
+              <a href="tel:+79880183755" class="service-accordion__cta btn btn--primary">Позвонить</a>
+              <a href="remont-mototsiklov.html" class="service-accordion__more" aria-label="Перейти на страницу ремонта мотоциклов">→ Узнать подробнее</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="parts" class="service-accordion" aria-labelledby="parts-title">
+          <h2 class="service-accordion__heading" id="parts-title">
+            <button class="service-accordion__header" type="button" aria-expanded="false" aria-controls="parts-content">
+              <span class="service-accordion__title">Изготовление деталей</span>
+              <span class="service-accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div id="parts-content" class="service-accordion__content" role="region" aria-labelledby="parts-title">
+            <h3>Изготовление пластиковых и резиновых деталей</h3>
+            <p class="service-accordion__summary">Изготовление пластиковых и резиновых деталей на заказ по образцу, чертежу или техническому заданию. Подходит для редких, снятых с производства и нестандартных элементов.</p>
+            <ul class="service-accordion__list">
+              <li>Компьютерное моделирование деталей и узлов</li>
+              <li>3D-печать пластиковых и «резиновых» деталей</li>
+              <li>Лазерная резка + гибка листовой нержавеющей и оцинкованной стали</li>
+              <li>Токарная обработка</li>
+              <li>Сварка алюминия и стали</li>
+            </ul>
+            <p class="service-accordion__note">Если нужную деталь сложно найти в продаже, она снята с производства или требуется нестандартное решение, можно изготовить ее на заказ. Подбираем технологию в зависимости от задачи, формы и условий эксплуатации детали.</p>
+            <div class="service-accordion__actions">
+              <a href="tel:+79880183755" class="service-accordion__cta btn btn--primary">Позвонить</a>
+              <a href="izgotovlenie-detaley.html" class="service-accordion__more" aria-label="Перейти на страницу изготовления деталей">→ Узнать подробнее</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="ac" class="service-accordion" aria-labelledby="ac-title">
+          <h2 class="service-accordion__heading" id="ac-title">
+            <button class="service-accordion__header" type="button" aria-expanded="false" aria-controls="ac-content">
+              <span class="service-accordion__title">Обслуживание систем кондиционирования</span>
+              <span class="service-accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div id="ac-content" class="service-accordion__content" role="region" aria-labelledby="ac-title">
+            <h3>Обслуживание, заправка И РЕМОНТ систем кондиционирования</h3>
+            <p class="service-accordion__summary">Обслуживание, заправка и ремонт систем кондиционирования с проверкой узлов и диагностикой климатической установки.</p>
+            <ul class="service-accordion__list">
+              <li>Проверка и заправка систем кондиционирования</li>
+              <li>Антибактериальная обработка</li>
+              <li>Поиск и устранение неисправностей в климатических установках: ремонт / замена радиатора, электроприводов заслонок, датчиков, поиск и устранение утечек фреона</li>
+            </ul>
+            <p class="service-accordion__note">Если в салоне стало хуже охлаждать, появился запах или система работает нестабильно, лучше проверить кондиционер до начала жаркого сезона.</p>
+            <div class="service-accordion__actions">
+              <a href="tel:+79880183755" class="service-accordion__cta btn btn--primary">Позвонить</a>
+              <a href="obsluzhivanie-kondicionerov.html" class="service-accordion__more" aria-label="Перейти на страницу обслуживания кондиционирования">→ Узнать подробнее</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="footer" aria-label="Подвал сайта">
+  <div class="container footer__container">
+    <div class="footer__main">
+      <p class="footer__copy">Инженерный сервисный центр Авторитет</p>
+      <p class="footer__copy">ремонт авто, ремонт мотоциклов, изготовление деталей, обслуживание и ремонт систем кондиционирования автомобилей</p>
+      <p class="footer__copy">ИП Фомин Евгений Геннадьевич</p>
+      <p class="footer__copy">Юридический адрес:</p>
+      <p class="footer__copy">404002, Волгоградская обл., г. Дубовка, ул. Сиреневая, д.30</p>
+      <p class="footer__copy">Фактический адрес: г. Волгоград, ул.Качалова, 69</p>
+      <p class="footer__copy">ИНН: 342101392200</p>
+      <p class="footer__copy">ОГРНИП: 314345807900031</p>
+      <p class="footer__copy"><a class="footer__link" href="tel:+79880183755">+7(988) 018-3755</a> <a class="footer__link" href="mailto:info@avtoritet34.ru">info@avtoritet34.ru</a></p>
+      <p class="footer__copy">© 2026 Инженерный сервисный центр Авторитет. Все права защищены.</p>
+      <p class="footer__copy">Разработчик: Фомин Роман</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js?v=20260322-6"></script>
+<script src="js/services-page.js?v=20260322-2"></script>
+  <script src="js/assistant-widget.js"></script>
+</body>
+</html>
+
+
+
+
+

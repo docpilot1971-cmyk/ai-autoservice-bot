@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Инженерный сервисный центр: ремонт авто и мотоциклов, изготовление деталей, обслуживание и ремонт систем кондиционирования.">
+  <title>Инженерный сервисный центр</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=20260322-6">
+</head>
+<body class="page-home">
+  <!-- Site Header -->
+  <!-- Header Block -->
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a class="header__brand" href="#top" aria-label="На главную страницу">
+      <img class="header__logo" src="images/logo2026_1.svg" alt="Логотип инженерного сервисного центра">
+    </a>
+
+    <a class="header__call-mobile" href="tel:+79880183755" aria-label="Позвонить по номеру +7(988)018-3755">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M6.62 10.79a15.46 15.46 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1-.24c1.1.37 2.28.56 3.49.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.3 21 3 13.7 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.21.19 2.39.56 3.49a1 1 0 0 1-.24 1z"/>
+      </svg>
+    </a>
+
+    <button
+      class="header__burger"
+      type="button"
+      aria-label="Открыть меню"
+      aria-expanded="false"
+      aria-controls="header-nav"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header__nav" id="header-nav" aria-label="Основная навигация">
+      <ul class="header__menu"><li><a class="header__link" href="index.html#services">Услуги</a></li><li><a class="header__link" href="index.html#about">Почему выбирают нас</a></li><li><a class="header__link" href="index.html#gallery">Галерея</a></li><li><a class="header__link" href="index.html#reviews">Отзывы</a></li><li><a class="header__link" href="index.html#faq">FAQ</a></li><li><a class="header__link" href="index.html#contacts">Контакты</a></li></ul>
+    </nav>
+
+    <a class="btn btn--primary header__cta" href="tel:+79880183755" aria-label="Позвонить по номеру +7 (988) 018-37-55">
+      +7(988)018-3755
+    </a>
+  </div>
+</header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Block -->
+<section class="section hero" id="hero" aria-label="Главный экран">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Инженерный сервисный центр</p>
+      <h1 class="hero__title">Диагностика, обслуживание и ремонт автомобилей и мотоциклов в Волгограде</h1>
+      <p class="section-subtitle hero__subtitle">
+        Европейские и азиатские автомобили с бензиновым, дизельным и гибридным двигателем.<br>
+        3D-печать пластиковых и "резиновых" деталей.<br>
+        Обслуживание, заправка и ремонт автокондиционеров.
+      </p>
+
+      <ul class="hero__features" aria-label="Преимущества сервиса">
+        <li class="hero__feature card">
+          <img src="images/icons/сложности.svg" alt="Иконка сложных случаев" class="hero__feature-icon">
+          <span class="hero__feature-text">Сложные случаи</span>
+        </li>
+        <li class="hero__feature card">
+          <img src="images/icons/инж.svg" alt="Иконка собственного производства" class="hero__feature-icon">
+          <span class="hero__feature-text">Собственное производство</span>
+        </li>
+        <li class="hero__feature card">
+          <img src="images/icons/гарантия.svg" alt="Иконка гарантии" class="hero__feature-icon">
+          <span class="hero__feature-text">Гарантия до 12 месяцев</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Services Block -->
+<section class="section services" id="services" aria-label="Услуги сервисного центра">
+  <div class="container">
+    <h2 class="section-title">Чем мы можем помочь</h2>
+    <p class="section-subtitle">Основные направления работ</p>
+
+    <div class="services__grid" data-services-interactive>
+      <article class="card services__card" id="service-auto">
+        <div
+          class="services__trigger"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+          aria-controls="service-auto-content"
+          id="service-auto-trigger"
+        >
+          <div class="services__icon-wrap">
+            <img class="services__icon" src="images/icons/АВТО.svg" alt="Иконка ремонта автомобилей">
+          </div>
+          <h3 class="services__title">Ремонт автомобилей</h3>
+          <p class="services__text">
+            Диагностика и ремонт основных узлов автомобиля с понятным списком работ и согласованием этапов.
+          </p>
+          <span class="services__hint" aria-hidden="true">Открыть список услуг</span>
+        </div>
+
+        <div
+          class="services__panel"
+          id="service-auto-content"
+          role="region"
+          aria-labelledby="service-auto-trigger"
+        >
+          <p class="services__panel-intro">Выберите направление ремонта автомобилей:</p>
+          <div class="services__subnav" aria-label="Подуслуги ремонта автомобилей">
+            <button class="services__subbtn is-active" type="button" data-subtarget="auto-engine" aria-pressed="true">Ремонт двигателя</button>
+            <button class="services__subbtn" type="button" data-subtarget="auto-gearbox" aria-pressed="false">Ремонт коробки</button>
+            <button class="services__subbtn" type="button" data-subtarget="auto-suspension" aria-pressed="false">Ремонт ходовой</button>
+            <button class="services__subbtn" type="button" data-subtarget="auto-electrics" aria-pressed="false">Электрика</button>
+          </div>
+
+          <div class="services__subpanels">
+            <section class="services__subpanel is-active" id="auto-engine" aria-label="Ремонт двигателя">
+              <p class="services__panel-text">Диагностика и ремонт двигателя при перегреве, нестабильной тяге, повышенном расходе масла и других неисправностях.</p>
+              <ul class="services__panel-list">
+                <li>Диагностика двигателя</li>
+                <li>Замена приводных ремней/цепей</li>
+                <li>Регулировка клапанов</li>
+                <li>Устранение течей масла и антифриза</li>
+                <li>Замена прокладок, сальников, уплотнений</li>
+                <li>Капитальный ремонт</li>
+              </ul>
+              <a class="services__more-link" href="remont-dvigatelya.html" aria-label="Перейти на страницу ремонта двигателя">
+                → Узнать подробнее
+              </a>
+            </section>
+
+            <section class="services__subpanel" id="auto-gearbox" aria-label="Ремонт коробки передач">
+              <p class="services__panel-text">Ремонт коробки передач при шуме, вибрации, утечках масла и затрудненном переключении.</p>
+              <ul class="services__panel-list">
+                <li>Диагностика коробки передач</li>
+                <li>Обслуживание и ремонт механических коробок передач</li>
+                <li>Замена сцепления</li>
+                <li>Проверка и ремонт приводов и узлов переключения</li>
+                <li>Ремонт раздаточных коробок</li>
+                <li>Обслуживание автоматических и роботизированных коробок, вариаторов</li>
+                <li>Ремонт карданных и приводных валов</li>
+              </ul>
+              <a class="services__more-link" href="remont-kpp.html" aria-label="Перейти на страницу ремонта коробки передач">
+                → Узнать подробнее
+              </a>
+            </section>
+
+            <section class="services__subpanel" id="auto-suspension" aria-label="Ремонт ходовой части">
+              <p class="services__panel-text">Ремонт ходовой части для восстановления управляемости, устойчивости и комфорта движения.</p>
+              <ul class="services__panel-list">
+                <li>Диагностика подвески, тормозной системы, рулевого управления</li>
+                <li>Замена пружин, амортизаторов, шаровых опор, сайлентблоков, рычагов</li>
+                <li>Регулировка и замена ступичных подшипников, втулок и стоек стабилизатора</li>
+                <li>Ремонт рулевых реек, замена рулевых тяг и наконечников</li>
+                <li>Замена тормозных колодок, дисков/барабанов, тросов стояночного тормоза, диагностика и ремонт ABS</li>
+                <li>Обслуживание и ремонт пневмоподвески</li>
+              </ul>
+              <a class="services__more-link" href="remont-hodovoy.html" aria-label="Перейти на страницу ремонта ходовой части">
+                → Узнать подробнее
+              </a>
+            </section>
+
+            <section class="services__subpanel" id="auto-electrics" aria-label="Ремонт автоэлектрики">
+              <p class="services__panel-text">Диагностика и ремонт автоэлектрики при проблемах запуска, зарядки, освещения и работе электрооборудования.</p>
+              <ul class="services__panel-list">
+                <li>Диагностика и ремонт электрооборудования, электронных систем</li>
+                <li>Ремонт стартера и генератора</li>
+                <li>Поиск сложных, в т.ч. «плавающих» неисправностей</li>
+                <li>Восстановление проводки и электронных компонентов</li>
+                <li>Монтаж дополнительного оборудования: видеорегистратор, фаркоп, дополнительное освещение, автономный отопитель</li>
+              </ul>
+              <a class="services__more-link" href="avtoelektrika.html" aria-label="Перейти на страницу ремонта автоэлектрики">
+                → Узнать подробнее
+              </a>
+            </section>
+          </div>
+        </div>
+      </article>
+
+      <article class="card services__card" id="service-moto">
+        <div
+          class="services__trigger"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+          aria-controls="service-moto-content"
+          id="service-moto-trigger"
+        >
+          <div class="services__icon-wrap">
+            <img class="services__icon" src="images/icons/МОТО.svg" alt="Иконка ремонта мотоциклов">
+          </div>
+          <h3 class="services__title">Ремонт мотоциклов</h3>
+          <p class="services__text">
+            Диагностика, обслуживание и ремонт мотоциклов разных марок с учетом сезонной эксплуатации.
+          </p>
+          <span class="services__hint" aria-hidden="true">Открыть список услуг</span>
+        </div>
+
+        <div
+          class="services__panel"
+          id="service-moto-content"
+          role="region"
+          aria-labelledby="service-moto-trigger"
+        >
+          <p class="services__panel-text">Работаем с мотоциклами разных типов и подбираем перечень работ по фактическому состоянию техники.</p>
+          <ul class="services__panel-list">
+            <li>Диагностика мотоцикла</li>
+            <li>Ремонт двигателя, подвески, электрики и электроники</li>
+            <li>Восстановление пластиковых элементов</li>
+            <li>Сборка и настройка новых мотоциклов</li>
+            <li>Подготовка мотоцикла к сезону</li>
+          </ul>
+          <a class="services__more-link" href="remont-mototsiklov.html" aria-label="Перейти на страницу ремонта мотоциклов">
+            → Узнать подробнее
+          </a>
+        </div>
+      </article>
+
+      <article class="card services__card" id="service-parts">
+        <div
+          class="services__trigger"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+          aria-controls="service-parts-content"
+          id="service-parts-trigger"
+        >
+          <div class="services__icon-wrap">
+            <img class="services__icon" src="images/icons/инж.svg" alt="Иконка изготовления деталей">
+          </div>
+          <h3 class="services__title">Изготовление деталей</h3>
+          <p class="services__text">
+            Изготовление пластиковых и "резиновых" деталей методом 3D-печати, металлических плоских и цилиндрических деталей на заказ по образцу, чертежу или техническому заданию.
+          </p>
+          <span class="services__hint" aria-hidden="true">Открыть список услуг</span>
+        </div>
+
+        <div
+          class="services__panel"
+          id="service-parts-content"
+          role="region"
+          aria-labelledby="service-parts-trigger"
+        >
+          <p class="services__panel-text">Если нужной детали нет в продаже или она снята с производства - мы можем помочь.</p>
+          <ul class="services__panel-list">
+            <li>Компьютерное моделирование деталей и узлов</li>
+            <li>3D-печать пластиковых и «резиновых» деталей</li>
+            <li>Лазерная резка + гибка листовой нержавеющей и оцинкованной сталей</li>
+            <li>Токарная обработка</li>
+            <li>Сварка алюминия и стали</li>
+          </ul>
+          <a class="services__more-link" href="izgotovlenie-detaley.html" aria-label="Перейти на страницу изготовления деталей">
+            → Узнать подробнее
+          </a>
+        </div>
+      </article>
+
+      <article class="card services__card" id="service-ac">
+        <div
+          class="services__trigger"
+          role="button"
+          tabindex="0"
+          aria-expanded="false"
+          aria-controls="service-ac-content"
+          id="service-ac-trigger"
+        >
+          <div class="services__icon-wrap">
+            <img class="services__icon" src="images/icons/АС.svg" alt="Иконка обслуживания кондиционирования">
+          </div>
+          <h3 class="services__title">Обслуживание систем кондиционирования</h3>
+          <p class="services__text">
+            Обслуживание, заправка и ремонт автокондициониров.
+          </p>
+          <span class="services__hint" aria-hidden="true">Открыть список услуг</span>
+        </div>
+
+        <div
+          class="services__panel"
+          id="service-ac-content"
+          role="region"
+          aria-labelledby="service-ac-trigger"
+        >
+          <p class="services__panel-text">Обслуживание, заправка и ремонт систем кондиционирования автомобиля.</p>
+          <ul class="services__panel-list">
+            <li>Проверка и заправка системы кондиционирования</li>
+            <li>Антибактериальная обработка</li>
+            <li>Поиск и устранение неисправностей в климатических установках: ремонт / замена радиаторов, сервоприводов заслонок, датчиков, поиск и устранение утечек фреона</li>
+          </ul>
+          <a class="services__more-link" href="obsluzhivanie-kondicionerov.html" aria-label="Перейти на страницу обслуживания кондиционирования">
+            → Узнать подробнее
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <div class="services__more">
+      <a class="btn btn--primary" href="services.html" aria-label="Перейти на страницу всех услуг">
+        Все услуги и перечень работ
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- About Block -->
+<section class="section about" id="about" aria-label="Преимущества сервисного центра">
+  <div class="container">
+    <h2 class="section-title">Почему выбирают нас</h2>
+    <p class="section-subtitle">
+      Работаем с европейскими и азиатскими автомобилями, мотоциклами, редкими деталями и сложными техническими задачами.
+    </p>
+
+    <div class="about__grid">
+      <article class="card about__card">
+        <div class="about__icon-wrap">
+          <img class="about__icon" src="images/icons/инж подход.svg" alt="Иконка инженерного подхода">
+        </div>
+        <h3 class="about__title">Инженерный подход</h3>
+        <p class="about__text">
+          Находим и устраняем корневую причину неисправности, а не просто меняем детали.
+        </p>
+      </article>
+
+      <article class="card about__card">
+        <div class="about__icon-wrap">
+          <img class="about__icon" src="images/icons/инж.svg" alt="Иконка собственного производства">
+        </div>
+        <h3 class="about__title">Собственное производство</h3>
+        <p class="about__text">
+          Если нужной детали нет в продаже — изготовим её сами, включая пластиковые и резиновые элементы, электронные компоненты и системы.
+        </p>
+      </article>
+
+      <article class="card about__card">
+        <div class="about__icon-wrap">
+          <img class="about__icon" src="images/icons/сложности.svg" alt="Иконка сложных случаев">
+        </div>
+        <h3 class="about__title">Сложные случаи</h3>
+        <p class="about__text">
+          Берёмся за нестандартные поломки, редкие модели техники и работы, за которые другие не хотят браться.
+        </p>
+      </article>
+
+      <article class="card about__card">
+        <div class="about__icon-wrap">
+          <img class="about__icon" src="images/icons/смета.svg" alt="Иконка прозрачной сметы и гарантии">
+        </div>
+        <h3 class="about__title">Прозрачная смета и гарантия</h3>
+        <p class="about__text">
+          Согласовываем стоимость работ, запасных частей и материалов. Даём гарантию до 12 месяцев.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Block -->
+<section class="section reviews" id="reviews" aria-label="Отзывы клиентов">
+  <div class="container">
+    <h2 class="section-title">Отзывы клиентов</h2>
+    <p class="section-subtitle">
+      Что говорят владельцы автомобилей и мотоциклов о нашей работе
+    </p>
+
+    <div class="reviews__grid">
+      <article class="card reviews__card">
+        <div class="reviews__head">
+          <img class="reviews__avatar" src="images/review-avatar-1.png" alt="Аватар клиента Василий С.">
+          <h3 class="reviews__name">Василий С.</h3>
+        </div>
+        <p class="reviews__text">
+        Попал к Евгению по совету прошлого владельца моего авто еще в 2019 году. И за все эти годы ни разу не пожалел.
+        На протяжении 6 лет, техническое обслуживание и ремонт делаю только здесь. Цена и качество всегда остаются на высоте. Отдельно хочу отметить, что помимо качественного ремонта здесь помогут подобрать качественные расходные материалы и запчасти, так как мне часто становилось попадаться "левые" запчасти в проверенных магазинах.
+        Из минусов могу только отметить наличие небольшой зоны ожидания и отсутствие кофемашины, а в целом рекомендую всем своим знакомым приезжать на ТО и ремонт сюда.    
+        </p>
+        <a class="reviews__more" href="#" aria-expanded="false">читать далее</a>
+        <p class="reviews__rating" aria-label="Рейтинг 5 из 5">★★★★★</p>
+      </article>
+
+      <article class="card reviews__card">
+        <div class="reviews__head">
+          <img class="reviews__avatar" src="images/review-avatar-2.png" alt="Аватар клиента Сергей И.">
+          <h3 class="reviews__name">Сергей И.</h3>
+        </div>
+        <p class="reviews__text">
+          Много лет обслуживаю свои авто в этом сервисе. Профессиональный подход даже в мелочах, а мелочей на дороге не бывает. Ведется база каждого авто. Всегда дружелюбны, приветливы. За много лет сотрудничества ни одного нарекания. Одним словом настоящие профи своего дела. Благополучия и процветания вам ребята!
+        </p>
+        <a class="reviews__more" href="#" aria-expanded="false">читать далее</a>
+        <p class="reviews__rating" aria-label="Рейтинг 5 из 5">★★★★★</p>
+      </article>
+
+      <article class="card reviews__card">
+        <div class="reviews__head">
+          <img class="reviews__avatar" src="images/review-avatar-3.png" alt="Аватар клиента Danzel">
+
+          <h3 class="reviews__name">Danzel</h3>
+        </div>
+        <p class="reviews__text">
+          Обратился в автосервис по совету своего родственника. С ремонтом ГРМ ,заменой сальников распредвалов проверкой и настройкой толкателей . Мастер Евгений производил ремонт моего авто фф2 1.6 100л.с рестайлинг. Всё было на высшем уровне мастерства . Грамотный и уверенный в себе и своём деле. О проделанной работе велась переписка в Вацап. Каждое решение о замене обговаривалось . Очень классно всё было сделано. Вымыто и заменено. Очень рекомендую данный автосервис. Может и для кого-то чуть дороже чем у других, но это того стоит (качество на высоте)
+        </p>
+        <a class="reviews__more" href="#" aria-expanded="false">читать далее</a>
+        <p class="reviews__rating" aria-label="Рейтинг 5 из 5">★★★★★</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Block -->
+<section class="section faq" id="faq" aria-label="Частые вопросы">
+  <div class="container">
+    <h2 class="section-title">Частые вопросы</h2>
+
+    <div class="faq__list" data-faq>
+      <article class="card faq__item">
+        <h3 class="faq__heading">
+          <button
+            class="faq__question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-1"
+            id="faq-question-1"
+          >
+            Работаете ли вы с мотоциклами?
+          </button>
+        </h3>
+        <div
+          class="faq__answer-wrap"
+          id="faq-answer-1"
+          role="region"
+          aria-labelledby="faq-question-1"
+        >
+          <p class="faq__answer">
+            Да, выполняем диагностику, обслуживание, ремонт и восстановление мотоциклов различных марок.
+          </p>
+        </div>
+      </article>
+
+      <article class="card faq__item">
+        <h3 class="faq__heading">
+          <button
+            class="faq__question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-2"
+            id="faq-question-2"
+          >
+            Можно ли изготовить деталь по образцу?
+          </button>
+        </h3>
+        <div
+          class="faq__answer-wrap"
+          id="faq-answer-2"
+          role="region"
+          aria-labelledby="faq-question-2"
+        >
+          <p class="faq__answer">
+            Да, можем изготовить небольшие пластиковые, "резиновые" и металлические детали и конструкции по образцу, чертежу или техническому заданию.
+          </p>
+        </div>
+      </article>
+
+      <article class="card faq__item">
+        <h3 class="faq__heading">
+          <button
+            class="faq__question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-3"
+            id="faq-question-3"
+          >
+            Даёте ли вы гарантию на работы?
+          </button>
+        </h3>
+        <div
+          class="faq__answer-wrap"
+          id="faq-answer-3"
+          role="region"
+          aria-labelledby="faq-question-3"
+        >
+          <p class="faq__answer">
+            Да, на выполненные работы предоставляется гарантия до 12 месяцев.
+          </p>
+        </div>
+      </article>
+
+      <article class="card faq__item">
+        <h3 class="faq__heading">
+          <button
+            class="faq__question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-4"
+            id="faq-question-4"
+          >
+            Сколько стоит диагностика?
+          </button>
+        </h3>
+        <div
+          class="faq__answer-wrap"
+          id="faq-answer-4"
+          role="region"
+          aria-labelledby="faq-question-4"
+        >
+          <p class="faq__answer">
+            Стоимость зависит от типа техники и сложности задачи.
+          </p>
+        </div>
+      </article>
+
+      <article class="card faq__item">
+        <h3 class="faq__heading">
+          <button
+            class="faq__question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-5"
+            id="faq-question-5"
+          >
+            Нужно ли записываться заранее?
+          </button>
+        </h3>
+        <div
+          class="faq__answer-wrap"
+          id="faq-answer-5"
+          role="region"
+          aria-labelledby="faq-question-5"
+        >
+          <p class="faq__answer">
+            Да, запись помогает избежать ненужного ожидания, принять технику в работу предварительно заготовив необходимые запчасти и материалы.
+          </p>
+        </div>
+      </article>
+
+      <article class="card faq__item">
+        <h3 class="faq__heading">
+          <button
+            class="faq__question"
+            type="button"
+            aria-expanded="false"
+            aria-controls="faq-answer-6"
+            id="faq-question-6"
+          >
+            Какие автомобили вы обслуживаете?
+          </button>
+        </h3>
+        <div
+          class="faq__answer-wrap"
+          id="faq-answer-6"
+          role="region"
+          aria-labelledby="faq-question-6"
+        >
+          <p class="faq__answer">
+            Специализируемся на немецких (Audi, BMW, Mercedes, Volkswagen/Skoda) и азиатских (Changan, Geely, Hyundai, Kia, Mitsubishi, Nissan, Subaru, Toyota и пр.) брендах, но наши опыт и оборудование позволяют выполнять работы практически на любом типе легковых авто и мототехники.
+            По всем вопросам ремонта и обслуживания Вашего транспортного средства — уточняйте по телефону, мы подскажем возможность обслуживания.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Block -->
+<section class="section gallery" id="gallery" aria-label="Галерея работ сервисного центра">
+  <div class="container">
+    <h2 class="section-title">Галерея работ</h2>
+    <p class="section-subtitle">
+      Несколько примеров работ и технических задач, которые мы выполняем в сервисе.
+    </p>
+
+    <div class="gallery__grid">
+      <figure class="card gallery__item">
+        <img class="gallery__image" src="images/Главная страница/gallery_1.jpg" alt="Диагностика электрооборудования в сервисном центре">
+        <figcaption class="gallery__caption">Диагностика электрооборудования</figcaption>
+      </figure>
+
+      <figure class="card gallery__item">
+        <img class="gallery__image" src="images/Главная страница/gallery_2.webp" alt="Рабочая зона сервиса для ремонта мотоциклов">
+        <figcaption class="gallery__caption">Рабочая зона сервиса для ремонта мотоциклов</figcaption>
+      </figure>
+
+      <figure class="card gallery__item">
+        <img class="gallery__image" src="images/Главная страница/gallery_3.webp" alt="Ремонт и техническое обслуживание автомобилей">
+        <figcaption class="gallery__caption">Ремонт и техническое обслуживание автомобилей</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contacts Block -->
+<section class="section contacts" id="contacts" aria-label="Контактная информация">
+  <div class="container">
+    <h2 class="section-title">Контакты</h2>
+
+    <div class="contacts__layout">
+      <div class="card contacts__info">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__label">Адрес:</span>
+            <span class="contacts__value">Волгоград, ул. Качалова, 69</span>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__label">Телефон:</span>
+            <a class="contacts__value contacts__link" href="tel:+79880183755" aria-label="Позвонить по номеру +7 988 018 37 55">
+              +7 (988) 018-37-55
+            </a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__label">Email:</span>
+            <a class="contacts__value contacts__link" href="mailto:info@avtoritet34.ru" aria-label="Написать на электронную почту info@avtoritet34.ru">
+              info@avtoritet34.ru
+            </a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__label">Режим работы:</span>
+            <span class="contacts__value">
+              Пн–Пт: 09:00–19:00<br>
+              Сб-ВС: по записи<br>        
+            </span>
+          </li>
+        </ul>
+
+        <div class="contacts__actions">
+          <a class="btn btn--primary" href="tel:+79880183755" aria-label="Позвонить">Позвонить</a>
+          
+          <a class="btn btn--secondary" href="https://yandex.com/maps/-/CPFLuRJW" target="_blank" rel="noopener noreferrer" aria-label="Построить маршрут в Яндекс Картах">Построить маршрут</a>
+        </div>
+      </div>
+
+        <div class="card contacts__map" aria-label="Карта проезда">
+        <a class="contacts__map-placeholder" id="contacts-map" href="https://yandex.com/maps/-/CPFLuRJW" target="_blank" rel="noopener noreferrer" aria-label="Открыть точку на Яндекс Картах">
+          <img class="contacts__map-image" src="images/maps.png" alt="Скриншот расположения сервисного центра на Яндекс Картах">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+    
+    
+<footer class="footer" id="footer" aria-label="Подвал сайта">
+  <div class="container footer__container">
+    <div class="footer__main">
+      <p class="footer__copy">Инженерный сервисный центр Авторитет</p>
+      <p class="footer__copy">ремонт авто, ремонт мотоциклов, изготовление деталей, обслуживание и ремонт систем кондиционирования автомобилей</p>
+      <p class="footer__copy">ИП Фомин Евгений Геннадьевич</p>
+      <p class="footer__copy">Адрес: г. Волгоград, ул.Качалова, 69</p>
+      <p class="footer__copy">ИНН: 342101392200</p>
+      <p class="footer__copy">ОГРНИП: 314345807900031</p>
+      <p class="footer__copy"><a class="footer__link" href="tel:+79880183755">+7(988) 018-3755</a> <a class="footer__link" href="mailto:info@avtoritet34.ru">info@avtoritet34.ru</a></p>
+      <p class="footer__copy">© 2026 Инженерный сервисный центр Авторитет. Все права защищены.</p>
+      <p class="footer__copy">Разработчик: Фомин Роман</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/script.js?v=20260322-6"></script>
+
+  <script src="js/assistant-widget.js"></script>
+</body>
+</html>
+
+
+
+
